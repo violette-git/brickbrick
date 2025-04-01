@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Breakout Game</h1>
+        </header>
+        
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="lives">Lives: <span id="lives">3</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+        </div>
+        
+        <div class="canvas-container">
+            <!-- Canvas with appropriate dimensions for a breakout game -->
+            <canvas id="gameCanvas" width="800" height="600" aria-label="Breakout Game Canvas" role="img">
+                Your browser does not support the HTML5 canvas element. Please upgrade your browser.
+            </canvas>
+        </div>
+        
+        <div class="game-controls">
+            <button id="startButton" class="btn" aria-label="Start Game">Start Game</button>
+            <button id="pauseButton" class="btn" aria-label="Pause Game">Pause</button>
+            <button id="restartButton" class="btn" aria-label="Restart Game">Restart</button>
+        </div>
+        
+        <div class="game-instructions">
+            <h2>How to Play</h2>
+            <p>Use the left and right arrow keys or move your mouse to control the paddle.</p>
+            <p>Break all the bricks to advance to the next level.</p>
+            <p>Don't let the ball fall below the paddle!</p>
+            <p>Press Space to launch the ball from the paddle.</p>
+        </div>
+        
+        <footer>
+            <p>Created with HTML5 Canvas - <span id="currentYear"></span></p>
+        </footer>
+    </div>
+    
+    <!-- Game scripts -->
+    <script src="game.js"></script>
+</body>
+</html>
