@@ -35,7 +35,7 @@ body {
 }
 
 #brick {
-  color: var(--accent-color);
+  color: #ff6b6b;
   font-weight: bold;
 }
 
